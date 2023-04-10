@@ -1,0 +1,200 @@
+body{
+  background-color:azure;
+}
+
+/* エラーメッセージ　*/
+.error{
+  color: red;
+}
+
+.change{
+  position: relative;
+  padding:10px 5px 10px 5px;
+}
+
+
+/* おしゃれボタン　*/
+.button0 button {
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  z-index:0;
+}
+.button0 button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #6bb6ff;
+  transition: .3s;
+  left:0;
+}
+.button0 button:hover {
+  color: #FFF;
+}
+.button0 button:hover:before {
+  width: 100%;
+  z-index: -1;
+}
+
+
+
+.waku{
+  border: solid;
+}
+
+#mybox{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  }
+
+
+/* サイドバー　*/
+
+
+
+.sub{
+  font-size:25px;
+  font-weight:bold;
+  line-height:4.5;
+  position: fixed;
+  top:0;
+}
+
+.sub_box{
+  border: solid 3px #CEF9F6;
+  text-align: left;
+  background-color: #CEF9F6;
+  width: 130%;
+  padding: 20px;
+  border-radius: 20px
+}
+
+
+/* タブ */
+
+.area {
+  width: 65%;
+  margin: auto;
+  position:relative;
+  left:-16%; 
+  flex-wrap: wrap;
+  display: flex;
+
+}
+ 
+.tab_class {
+  /* width: calc(100%/5); */
+  width: 50%;
+  height: 50px;
+  background-color: darkgrey;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+  
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+ 
+input:checked + .tab_class {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+ 
+.content_class {
+  display: none;
+  width: 100%;
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+}
+
+
+   .kasen{
+     text-decoration: underline;
+   }
+
+   /* マイページ数字 */
+.my_su{
+  border: solid 3px rgb(105, 105, 105);
+  background-color: rgb(156, 156, 156);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+   /* 不満投稿ボックス */
+   .box{
+    border: solid 3px rgb(105, 105, 105);
+    text-align: left;
+    background-color: #F9F9EE;
+    padding: 20px;
+    border-radius: 20px
+ }
+
+/* 張りぼて */
+.box2{
+  border: solid 3px rgb(105, 105, 105);
+  text-align: left;
+  background-color: #F9F9EE;
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px
+}
+
+.pointbox1{
+  border: solid 3px rgb(105, 105, 105);
+  text-align: center;
+  background-color: #EBEBEA;
+  width:500px;
+  padding: 20px;
+  border-radius: 20px
+}
+
+.pointbox2{
+  border: solid 3px rgb(105, 105, 105);
+  text-align: left;
+  background-color: #EBEBEA;
+  width:900px;
+  padding: 20px;
+  border-radius: 20px 
+}
+
+.actbox{
+  border: solid 3px rgb(105, 105, 105);
+  text-align: center;
+  background-color: #F9F9EE;
+  width: 20%;
+  padding: 2px;
+  border-radius: 20px
+}
+
+.hr1 {
+  position: relative;
+	height: 3px;
+	border-width: 0;
+	background-color: #00bcd4;
+	background-image: -webkit-linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+	background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+}
+
+
+.field{
+  display: flex;
+}

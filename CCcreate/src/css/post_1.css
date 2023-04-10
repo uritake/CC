@@ -1,0 +1,11 @@
+.invalid-feedback{
+    box-sizing: border-box;
+   border: 1px solid #f00;
+   color: #f00;
+   margin-top: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 45px;
+   padding-right: 15px;
+   text-indent: -30px;
+}

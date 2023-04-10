@@ -1,0 +1,171 @@
+
+
+/* エラーメッセージ　*/
+.error{
+  color: red;
+}
+
+
+/* おしゃれボタン　*/
+.button input {
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.button input:after {
+content: "";
+position: absolute;
+top: 50%;
+bottom: 0;
+right: 2rem;
+font-size: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 0.3s;
+width: 6px;
+height: 6px;
+border-top: solid 2px currentColor;
+border-right: solid 2px currentColor;
+transform: translateY(-50%) rotate(45deg);
+}
+.button input:hover {
+background: #6bb6ff;
+color: #FFF;
+}
+.button input:hover:after {
+right: 1.4rem;
+}
+
+#mybox{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  }
+
+
+/* サイドバー　*/
+.sub{
+  font-size:25px;
+  font-weight:bold;
+  line-height:4.5;
+  position: fixed;
+  top:0;
+
+}
+
+.sub_design{
+  background-color: #6bb6ff;
+  padding: 75px;
+}
+
+/* tab */
+
+.tab {
+  /* インラインブロック化 */
+  /* 上側と左右に枠線を引く */
+ /* 枠線の種類は「実線」 */
+ /* 枠線の色は「黒」 */
+ /* 左上と右上の角だけを丸くする */
+  padding: 0.75em 1em;            /* 内側の余白量 */
+  font-weight: bold;              /* タブの文字を太字にする */
+  color: black;                   /* タブの文字色：黒色 */
+  background-color: white;      /* タブの(非選択状態の)背景色：灰色 */
+}
+
+/* ▼タブにマウスポインタが載った際の装飾 */
+.tab:hover {
+  color: green;                /* タブの文字色：緑色 */
+  background-color: white;   /* タブの背景色：淡い緑色 */
+  cursor: pointer;             /* マウスポインタの形状を「指(指し示す形)」にする */
+}
+
+/* ▼選択状態のタブ(＝チェックが入っているラジオボタンの隣にあるタブの装飾) */
+input:checked + .tab {
+  color: red;                  /* タブの文字色：赤色 */
+  background-color: white;   /* タブの背景色：淡い黄色 */
+}
+
+.tabbox input { display: none; }
+
+
+   /* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+   .tabcontent {
+      display: none;             /* 標準では非表示にする */
+      /* 枠線を引く：黒色で1ピクセルの実線 */
+      padding: 5px;              /* 内側の余白量 */
+      background-color: white; /* 背景色：淡い黄色(※選択中のタブの背景色と合わせます) */
+   }
+
+   /* ▼チェックが入っているラジオボタンに対応するタブの中身を表示する */
+   #tabcheck1:checked ~ #tabcontent1 { display: block; }
+   #tabcheck2:checked ~ #tabcontent2 { display: block; }
+
+   .kasen{
+     text-decoration: underline;
+   }
+
+   /* マイページ数字 */
+.my_su{
+  border: solid 3px rgb(105, 105, 105);
+  background-color: rgb(156, 156, 156);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+   /* 不満投稿ボックス */
+.box{
+   border: solid 3px rgb(105, 105, 105);
+   text-align: left;
+   background-color: rgb(156, 156, 156);
+   width:1000px;
+   padding: 20px;
+   border-radius: 20px
+}
+
+/* 張りぼて */
+.box2{
+  border:none;
+  width: 900px;
+}
+
+.pointbox1{
+  border: solid 3px rgb(105, 105, 105);
+  text-align: center;
+  background-color: rgb(156, 156, 156);
+  width:500px;
+  padding: 20px;
+  border-radius: 20px
+}
+
+.pointbox2{
+  border: solid 3px rgb(105, 105, 105);
+  text-align: left;
+  background-color: rgb(228, 228, 228);
+  width:900px;
+  padding: 20px;
+  border-radius: 20px 
+}
+
+.hr1 {
+  position: relative;
+	height: 3px;
+	border-width: 0;
+	background-color: #00bcd4;
+	background-image: -webkit-linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+	background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+}
+
+
+.field{
+  display: flex;
+}
